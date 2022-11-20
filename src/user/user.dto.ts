@@ -5,6 +5,8 @@ export class CreateUserDTO {
   name: string;
   @IsEmail()
   email: string;
+  @IsString()
+  password: string;
 }
 
 export class UpdateUserDTO {
@@ -12,4 +14,6 @@ export class UpdateUserDTO {
   name: string;
   @IsEmail()
   email: string;
+  @IsString()
+  password: string;
 }
